@@ -1,2 +1,2 @@
-# nvim-conf
+# nvim
 A lua-based neovim configuration
