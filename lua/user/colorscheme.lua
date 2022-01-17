@@ -1,4 +1,12 @@
-local colorscheme = "tokyonight"
+-- Customize theme here
+require("onedark").setup {
+    style = "warm",
+    term_colors = false
+}
+
+
+-- Set theme here
+local colorscheme = "onedark"
 
 -- Use protected call
 local status_ok, _ = pcall(vim.cmd, "colorscheme " .. colorscheme)
