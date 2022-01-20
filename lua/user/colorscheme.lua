@@ -1,7 +1,7 @@
 -- Customize theme here
 require("onedark").setup {
-    style = "dark",
-    term_colors = false
+    style = "warm",
+    term_colors = true
 }
 
 
