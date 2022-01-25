@@ -1,12 +1,12 @@
 -- Customize theme here
-require("onedark").setup {
-    style = "warm",
-    term_colors = true
-}
+--require("onedark").setup {
+--    style = "warm",
+--    term_colors = true
+--}
 
 
 -- Set theme here
-local colorscheme = "onedark"
+local colorscheme = "catppuccin"
 
 -- Use protected call
 local status_ok, _ = pcall(vim.cmd, "colorscheme " .. colorscheme)
