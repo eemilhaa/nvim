@@ -4,6 +4,7 @@ local colorscheme = "rose-pine"
 -- Theme-specific customizations here
 if colorscheme == "rose-pine" then
     require(colorscheme).set('moon')
+    vim.g.rose_pine_disable_italics = true
 end
 
 if colorscheme == "onedark" then
@@ -16,6 +17,6 @@ end
 -- Use protected call
 local status_ok, _ = pcall(vim.cmd, "colorscheme " .. colorscheme)
 if not status_ok then
-  vim.notify("colorscheme " .. colorscheme .. " not found!")
-  return
+    vim.notify("colorscheme " .. colorscheme .. " not found!")
+    return
 end
