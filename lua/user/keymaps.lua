@@ -1,5 +1,7 @@
+-- Options for stting keymaps
 local opts = { noremap = true, silent = true }
 
+-- Terminal-specific opts
 local term_opts = { silent = true }
 
 -- Shorten function name
@@ -68,9 +70,8 @@ keymap("t", "<C-k>", "<C-\\><C-N><C-w>k", term_opts)
 keymap("t", "<C-l>", "<C-\\><C-N><C-w>l", term_opts)
 
 
--- Autoclose https://superuser.com/questions/31677/how-do-i-open-the-directory-of-the-current-open-file
---keymap( " ""<left>)
---keymap( ' ''<left>)
---keymap( ( ()<left>)
---keymap( [ []<left>)
---keymap( { {}<left>)
+vim.cmd([[inoremap " ""<left>]])
+vim.cmd([[inoremap ' ''<left>]])
+vim.cmd([[inoremap ( ()<left>]])
+vim.cmd([[inoremap [ []<left>]])
+vim.cmd([[inoremap { {}<left>]])
