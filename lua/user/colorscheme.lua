@@ -1,5 +1,5 @@
 -- Select theme here
-local colorscheme = "catppuccin"
+local colorscheme = "rose-pine"
 
 -- Theme-specific customizations here
 if colorscheme == "catppuccin" then
