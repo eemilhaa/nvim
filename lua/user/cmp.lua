@@ -1,4 +1,3 @@
---https://vi.stackexchange.com/questions/15733/auto-activate-autocompletion?rq=1
 local cmp_status_ok, cmp = pcall(require, "cmp")
 if not cmp_status_ok then
     return
@@ -34,7 +33,7 @@ cmp.setup {
             c = cmp.mapping.close(),
         },
 
-        -- USE TAB
+        -- USE TAB, all this can be commented for default behaviour
         -- Accept currently selected item. If none selected, `select` first item.
         -- Set `select` to `false` to only confirm explicitly selected items.
         ["<CR>"] = cmp.mapping.confirm { select = true },
@@ -81,4 +80,4 @@ cmp.setup {
         ghost_text = false,
         native_menu = false,
     },
-}--https://zignar.net/2021/05/14/neovim-completion-pluign-building-blocks/
+}
