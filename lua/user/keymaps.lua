@@ -27,7 +27,14 @@ vim.g.maplocalleader = " "
 --keymap("n", "<C-k>", "<C-w>k", opts)
 --keymap("n", "<C-l>", "<C-w>l", opts)
 
-keymap("n", "<leader>e", ":Lex 30<cr>", opts)
+-- If using nvim-tree
+keymap("n", "<leader>e", ":NvimTreeToggle<CR>", opts)
+keymap("n", "<leader>r", ":NvimTreeRefresh<CR>", opts)
+keymap("n", "<leader>n", ":NvimTreeFindFile<CR>", opts)
+
+-- if not using nvim-tree
+--keymap("n", "<leader>e", ":Lex 30<cr>", opts)
+--keymap("n", "<leader>t", ":Tex <cr>", opts)
 --
 -- Resize windows with arrows
 keymap("n", "<C-Up>", ":resize +2<CR>", opts)
@@ -75,16 +82,3 @@ vim.cmd([[inoremap ' ''<left>]])
 vim.cmd([[inoremap ( ()<left>]])
 vim.cmd([[inoremap [ []<left>]])
 vim.cmd([[inoremap { {}<left>]])
-
-
--- Multipurpose tab
---vim.cmd([[function! InsertTabWrapper()
---    let col = col('.') - 1
---    if !col || getline('.')[col - 1] !~ '\k'
---        return "\<tab>"
---    else
---        return "\<c-p>"
---    endif
---endfunction
---inoremap <expr> <tab> InsertTabWrapper()
---inoremap <s-tab> <c-n>]])
