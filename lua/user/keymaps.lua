@@ -22,10 +22,10 @@ vim.g.maplocalleader = " "
 
 -- Normal --
 -- Better window navigation
---keymap("n", "<C-h>", "<C-w>h", opts)
---keymap("n", "<C-j>", "<C-w>j", opts)
---keymap("n", "<C-k>", "<C-w>k", opts)
---keymap("n", "<C-l>", "<C-w>l", opts)
+keymap("n", "<S-w>h", "<C-w>h", opts)
+keymap("n", "<S-w>j", "<C-w>j", opts)
+keymap("n", "<S-w>k", "<C-w>k", opts)
+keymap("n", "<S-w>l", "<C-w>l", opts)
 
 -- If using nvim-tree
 keymap("n", "<leader>e", ":NvimTreeToggle<CR>", opts)
