@@ -22,12 +22,12 @@ vim.g.maplocalleader = " "
 
 -- Normal --
 -- Better window navigation
-keymap("n", "<S-w>h", "<C-w>h", opts)
-keymap("n", "<S-w>j", "<C-w>j", opts)
-keymap("n", "<S-w>k", "<C-w>k", opts)
-keymap("n", "<S-w>l", "<C-w>l", opts)
+--keymap("n", "<S-w>h", "<C-w>h", opts)
+--keymap("n", "<S-w>j", "<C-w>j", opts)
+--keymap("n", "<S-w>k", "<C-w>k", opts)
+--keymap("n", "<S-w>l", "<C-w>l", opts)
 
--- If using nvim-tree
+-- Show files if using nvim-tree
 keymap("n", "<leader>e", ":NvimTreeToggle<CR>", opts)
 keymap("n", "<leader>r", ":NvimTreeRefresh<CR>", opts)
 keymap("n", "<leader>n", ":NvimTreeFindFile<CR>", opts)
