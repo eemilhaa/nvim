@@ -1,5 +1,7 @@
+-- Options for stting keymaps
 local opts = { noremap = true, silent = true }
 
+-- Terminal-specific opts
 local term_opts = { silent = true }
 
 -- Shorten function name
@@ -20,12 +22,19 @@ vim.g.maplocalleader = " "
 
 -- Normal --
 -- Better window navigation
---keymap("n", "<C-h>", "<C-w>h", opts)
---keymap("n", "<C-j>", "<C-w>j", opts)
---keymap("n", "<C-k>", "<C-w>k", opts)
---keymap("n", "<C-l>", "<C-w>l", opts)
+keymap("n", "<S-w>h", "<C-w>h", opts)
+keymap("n", "<S-w>j", "<C-w>j", opts)
+keymap("n", "<S-w>k", "<C-w>k", opts)
+keymap("n", "<S-w>l", "<C-w>l", opts)
 
-keymap("n", "<leader>e", ":Lex 30<cr>", opts)
+-- If using nvim-tree
+keymap("n", "<leader>e", ":NvimTreeToggle<CR>", opts)
+keymap("n", "<leader>r", ":NvimTreeRefresh<CR>", opts)
+keymap("n", "<leader>n", ":NvimTreeFindFile<CR>", opts)
+
+-- if not using nvim-tree
+--keymap("n", "<leader>e", ":Lex 30<cr>", opts)
+--keymap("n", "<leader>t", ":Tex <cr>", opts)
 --
 -- Resize windows with arrows
 keymap("n", "<C-Up>", ":resize +2<CR>", opts)
@@ -66,3 +75,10 @@ keymap("t", "<C-h>", "<C-\\><C-N><C-w>h", term_opts)
 keymap("t", "<C-j>", "<C-\\><C-N><C-w>j", term_opts)
 keymap("t", "<C-k>", "<C-\\><C-N><C-w>k", term_opts)
 keymap("t", "<C-l>", "<C-\\><C-N><C-w>l", term_opts)
+
+-- Budget autopairs
+--vim.cmd([[inoremap " ""<left>]])
+--vim.cmd([[inoremap ' ''<left>]])
+--vim.cmd([[inoremap ( ()<left>]])
+--vim.cmd([[inoremap [ []<left>]])
+--vim.cmd([[inoremap { {}<left>]])
