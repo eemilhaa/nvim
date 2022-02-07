@@ -61,12 +61,14 @@ return packer.startup(function(use)
 
     -- Colorschemes
     --use 'folke/tokyonight.nvim'
-    use 'navarasu/onedark.nvim'
+    --use 'navarasu/onedark.nvim'
     --use 'tanvirtin/monokai.nvim'
     --use({"catppuccin/nvim", as = "catppuccin"})
-    use({'rose-pine/neovim', as = 'rose-pine'})
-    use "projekt0n/github-nvim-theme"
-    
+    --use({'rose-pine/neovim', as = 'rose-pine'})
+    --use "projekt0n/github-nvim-theme"
+    --use 'marko-cerovac/material.nvim'
+    use 'shaunsingh/nord.nvim'  
+
     -- Treesitter
     use {
         'nvim-treesitter/nvim-treesitter',

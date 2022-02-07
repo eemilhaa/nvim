@@ -1,5 +1,5 @@
 -- Select theme here
-local colorscheme = "rose-pine"
+local colorscheme = "nord"
 
 -- Theme-specific customizations here
 if colorscheme == "catppuccin" then
@@ -27,6 +27,17 @@ if colorscheme == "onedark" then
         style = "warm",
         term_colors = true
     }
+end
+
+if colorscheme == "material" then
+    vim.g.material_style = "darker"
+end
+
+if colorscheme == "nord" then
+    vim.g.nord_contrast = true
+    vim.g.nord_borders = false
+    vim.g.nord_disable_background = false
+    vim.g.nord_italic = false
 end
 
 -- Set theme here, use protected call
