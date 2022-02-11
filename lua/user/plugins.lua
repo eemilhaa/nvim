@@ -99,6 +99,14 @@ return packer.startup(function(use)
     -- Show indent guides
     use "lukas-reineke/indent-blankline.nvim"
 
+    -- Gitsigns
+    use {
+        'lewis6991/gitsigns.nvim',
+        requires = {
+            'nvim-lua/plenary.nvim'
+        },
+    }
+
     -- Automatically set up your configuration after cloning packer.nvim
     -- Put this at the end after all plugins
     if PACKER_BOOTSTRAP then

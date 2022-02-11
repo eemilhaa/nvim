@@ -1,23 +1,34 @@
+-- following options are the default
+-- each of these are documented in `:help nvim-tree.OPTION_NAME`
 require'nvim-tree'.setup {
---    disable_netrw = true,
---    hijack_netrw = true,
---    open_on_setup = false,
---    ignore_ft_on_setup = {},
---    auto_close = false,
---    open_on_tab = false,
---    hijack_cursor = false,
---    update_cwd = false,
---    update_to_buf_dir = {
+--    disable_netrw             = true,
+--    hijack_netrw                = true,
+--    open_on_setup             = false,
+--    ignore_ft_on_setup    = {},
+--    auto_close                    = false,
+--    open_on_tab                 = false,
+--    hijack_cursor             = false,
+--    update_cwd                    = false,
+--    update_to_buf_dir     = {
 --        enable = true,
 --        auto_open = true,
 --    },
---    update_focused_file = {
+--    diagnostics = {
 --        enable = false,
---        update_cwd = false,
+--        icons = {
+--            hint = "?",
+--            info = "?",
+--            warning = "?",
+--            error = "?",
+--        }
+--    },
+--    update_focused_file = {
+--        enable            = false,
+--        update_cwd    = false,
 --        ignore_list = {}
 --    },
 --    system_open = {
---        cmd = nil,
+--        cmd    = nil,
 --        args = {}
 --    },
 --    filters = {
@@ -34,7 +45,7 @@ require'nvim-tree'.setup {
 --        height = 30,
 --        hide_root_folder = false,
 --        side = 'left',
---        auto_resize = true,--CHANGED
+--        auto_resize = false,
 --        mappings = {
 --            custom_only = false,
 --            list = {}
@@ -46,5 +57,13 @@ require'nvim-tree'.setup {
 --    trash = {
 --        cmd = "trash",
 --        require_confirm = true
+--    },
+--    actions = {
+--        change_dir = {
+--            global = false,
+--        },
+--        open_file = {
+--            quit_on_open = false,
+--        }
 --    }
 }
