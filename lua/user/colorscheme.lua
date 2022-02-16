@@ -1,5 +1,5 @@
 -- Select theme here
-local colorscheme = "nord"
+local colorscheme = "nightfox"
 
 -- Theme-specific customizations here
 if colorscheme == "catppuccin" then
@@ -38,6 +38,31 @@ if colorscheme == "nord" then
     --vim.g.nord_borders = false
     --vim.g.nord_disable_background = false
     vim.g.nord_italic = false
+end
+
+if colorscheme == "nightfox" then
+    local nightfox = require(colorscheme) 
+    nightfox.setup({
+        fox = "nordfox", -- change the colorscheme to use nordfox
+        styles = {
+            comments = "italic", -- change style of comments to be italic
+            keywords = "bold", -- change style of keywords to be bold
+            --functions = "italic,bold" -- styles can be a comma separated list
+        },
+--        inverse = {
+--            match_paren = true, -- inverse the highlighting of match_parens
+--        },
+--        colors = {
+--            red = "#FF000", -- Override the red color for MAX POWER
+--            bg_alt = "#000000",
+--        },
+--        hlgroups = {
+--            TSPunctDelimiter = { fg = "${red}" }, -- Override a highlight group with the color red
+--            LspCodeLens = { bg = "#000000", style = "italic" },
+--        }
+    })
+    nightfox.load()
+    return
 end
 
 -- Set theme here, use protected call

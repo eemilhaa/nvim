@@ -67,7 +67,8 @@ return packer.startup(function(use)
     --use({'rose-pine/neovim', as = 'rose-pine'})
     --use "projekt0n/github-nvim-theme"
     --use 'marko-cerovac/material.nvim'
-    use 'shaunsingh/nord.nvim'  
+    --use 'shaunsingh/nord.nvim'  
+    use 'EdenEast/nightfox.nvim'
 
     -- Treesitter
     use {
