@@ -15,10 +15,9 @@ if colorscheme == "catppuccin" then
     require(colorscheme).setup(setup)
 end
 
+-- TODO
 if colorscheme == "rose-pine" then
-    require(colorscheme).set(
-        'moon'
-    )
+    vim.cmd("set background=light")
     vim.g.rose_pine_disable_italics = true
 end
 
@@ -37,7 +36,7 @@ if colorscheme == "nord" then
     --vim.g.nord_contrast = false
     --vim.g.nord_borders = false
     --vim.g.nord_disable_background = false
-    vim.g.nord_italic = true
+    --vim.g.nord_italic = true
 end
 
 if colorscheme == "nightfox" then
