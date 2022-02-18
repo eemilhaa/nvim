@@ -1,5 +1,5 @@
 -- Select theme here
-local colorscheme = "nightfox"
+local colorscheme = "nord"
 
 -- Theme-specific customizations here
 if colorscheme == "catppuccin" then
@@ -37,7 +37,7 @@ if colorscheme == "nord" then
     --vim.g.nord_contrast = false
     --vim.g.nord_borders = false
     --vim.g.nord_disable_background = false
-    vim.g.nord_italic = false
+    vim.g.nord_italic = true
 end
 
 if colorscheme == "nightfox" then

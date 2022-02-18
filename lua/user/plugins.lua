@@ -46,7 +46,7 @@ return packer.startup(function(use)
     use "wbthomason/packer.nvim" -- Have packer manage itself
     use "nvim-lua/popup.nvim" -- An implementation of the Popup API from vim in Neovim
     use "nvim-lua/plenary.nvim" -- Useful lua functions used ny lots of plugins
-    
+
     -- nvim-tree
     use {
         'kyazdani42/nvim-tree.lua',
@@ -67,8 +67,8 @@ return packer.startup(function(use)
     --use({'rose-pine/neovim', as = 'rose-pine'})
     --use "projekt0n/github-nvim-theme"
     --use 'marko-cerovac/material.nvim'
-    --use 'shaunsingh/nord.nvim'  
-    use 'EdenEast/nightfox.nvim'
+    use 'shaunsingh/nord.nvim'
+    --use 'EdenEast/nightfox.nvim'
 
     -- Treesitter
     use {
