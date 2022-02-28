@@ -14,7 +14,7 @@ keymap("n", "k", "gk", opts)
 keymap("n", "0", "g0", opts)
 keymap("n", "$", "g$", opts)
 keymap("n", "I", "gI", opts)
-keymap("n", "A", "g$i", opts)
+keymap("n", "A", "g$a", opts)
 
 vim.opt.wrap = true
 vim.opt.linebreak = true
