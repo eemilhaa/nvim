@@ -1,5 +1,5 @@
 -- Select theme here
-local colorscheme = "tokyonight"
+local colorscheme = "nord"
 
 -- Theme-specific customizations here
 if colorscheme == "catppuccin" then
