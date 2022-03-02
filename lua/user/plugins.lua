@@ -60,12 +60,11 @@ return packer.startup(function(use)
     use {'akinsho/bufferline.nvim', requires = 'kyazdani42/nvim-web-devicons'}
 
     -- Colorschemes
-    --use 'folke/tokyonight.nvim'
+    use 'folke/tokyonight.nvim'
     --use 'navarasu/onedark.nvim'
     --use 'tanvirtin/monokai.nvim'
     --use({"catppuccin/nvim", as = "catppuccin"})
     --use({'rose-pine/neovim', as = 'rose-pine'})
-    --use "projekt0n/github-nvim-theme"
     --use 'marko-cerovac/material.nvim'
     use 'shaunsingh/nord.nvim'
     --use 'EdenEast/nightfox.nvim'
@@ -107,7 +106,13 @@ return packer.startup(function(use)
             'nvim-lua/plenary.nvim'
         },
     }
-
+    use {
+        'nvim-lualine/lualine.nvim',
+        requires = {
+            'kyazdani42/nvim-web-devicons',
+            opt = true
+        }
+    }
     -- Automatically set up your configuration after cloning packer.nvim
     -- Put this at the end after all plugins
     if PACKER_BOOTSTRAP then
