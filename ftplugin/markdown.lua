@@ -1,5 +1,5 @@
 
--- Options for stting keymaps
+-- Options for setting keymaps
 local opts = { noremap = true, silent = true }
 
 -- Terminal-specific opts
@@ -15,6 +15,9 @@ keymap("n", "0", "g0", opts)
 keymap("n", "$", "g$", opts)
 keymap("n", "I", "gI", opts)
 keymap("n", "A", "g$a", opts)
+
+keymap("v", "j", "gj", opts)
+keymap("v", "k", "gk", opts)
 
 vim.opt.wrap = true
 vim.opt.linebreak = true
