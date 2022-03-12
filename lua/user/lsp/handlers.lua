@@ -5,7 +5,7 @@ M.setup = function()
     local config = {
         -- disable virtual text
         virtual_text = false,
-        -- show signs
+        -- no signs
 --        signs = {
 --            active = signs,
 --        },

@@ -42,9 +42,11 @@ cmp.setup {
         end,
     },
     sources = {
+        -- the order matters here, place most important first
         { name = 'nvim_lsp' },
         { name = 'luasnip' },
         { name = 'buffer' },
+        { name = 'path' },
     },
 }
 

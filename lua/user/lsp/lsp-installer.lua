@@ -4,6 +4,7 @@ local lsp_installer = require("nvim-lsp-installer")
 -- or if the server is already installed).
 lsp_installer.on_server_ready(function(server)
     local opts = {
+        -- Use handlers stuff here
         on_attach = require("user.lsp.handlers").on_attach,
         capabilities = require("user.lsp.handlers").capabilities,
     }
