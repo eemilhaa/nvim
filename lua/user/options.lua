@@ -1,4 +1,5 @@
 local tabsize = 4
+local scrolloff = 8
 -- :help options
 vim.opt.backup = false                          -- creates a backup file
 vim.opt.clipboard = "unnamedplus"               -- allows neovim to access the system clipboard
@@ -37,8 +38,8 @@ vim.opt.relativenumber = false                  -- set relative numbered lines
 vim.opt.numberwidth = 2                         -- set number column width to 2 {default 4}
 vim.opt.signcolumn = "yes"                      -- always show the sign column, otherwise it would shift the text each time
 vim.opt.wrap = false                            -- display lines as one long line
-vim.opt.scrolloff = 8                           -- is one of my fav
-vim.opt.sidescrolloff = 8
+vim.opt.scrolloff = scrolloff                           -- is one of my fav
+vim.opt.sidescrolloff = scrolloff
 vim.opt.guifont = "monospace:h17"               -- the font used in graphical neovim applications
 
 vim.opt.shortmess:append "c"
