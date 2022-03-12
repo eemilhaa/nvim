@@ -27,9 +27,6 @@ keymap("n", "<C-j>", "<C-w>j", opts)
 keymap("n", "<C-k>", "<C-w>k", opts)
 keymap("n", "<C-l>", "<C-w>l", opts)
 
--- LSP
---keymap("n", "<leader>l", '<cmd>lua vim.diagnostic.open_float({ border = "rounded" })<CR>', opts)
-
 -- Show files if using nvim-tree
 keymap("n", "<leader>e", ":NvimTreeToggle<CR>", opts)
 keymap("n", "<leader>r", ":NvimTreeRefresh<CR>", opts)
