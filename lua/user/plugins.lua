@@ -65,7 +65,7 @@ return packer.startup(function(use)
     --use 'tanvirtin/monokai.nvim'
     --use({"catppuccin/nvim", as = "catppuccin"})
     --use({'rose-pine/neovim', as = 'rose-pine'})
-    use 'marko-cerovac/material.nvim'
+    --use 'marko-cerovac/material.nvim'
     --use 'shaunsingh/nord.nvim'
     --use 'EdenEast/nightfox.nvim'
 

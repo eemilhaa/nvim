@@ -15,12 +15,11 @@ local colorscheme = "onedark"
 --    require(colorscheme).setup(setup)
 --end
 
---if colorscheme == "onedark" then
---    require(colorscheme).setup {
---        style = "warm",
---        term_colors = true
---    }
---end
+if colorscheme == "onedark" then
+    require(colorscheme).setup {
+        style = "warm",
+    }
+end
 
 if colorscheme == "material" then
     vim.g.material_style = "darker"
