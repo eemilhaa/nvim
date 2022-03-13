@@ -1,5 +1,5 @@
 -- Select theme here
-local colorscheme = "material"
+local colorscheme = "onedark"
 
 -- Theme-specific customizations here
 --if colorscheme == "catppuccin" then
