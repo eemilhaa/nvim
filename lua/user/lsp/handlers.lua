@@ -3,18 +3,14 @@ local M = {}
 
 M.setup = function()
     local config = {
-        -- disable virtual text
         virtual_text = false,
-        -- no signs
---        signs = {
---            active = signs,
---        },
         update_in_insert = true,
         underline = true,
         severity_sort = true,
         float = {
             focusable = false,
             style = "minimal",
+            -- no borders
             --border = "rounded",
             source = "always",
             header = "",

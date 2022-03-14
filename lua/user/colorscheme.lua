@@ -61,14 +61,6 @@ if colorscheme == "material" then
     })
 end
 
---if colorscheme == "nord" then
---    --vim.g.nord_contrast = false
---    --vim.g.nord_borders = false
---    --vim.g.nord_disable_background = false
---    --vim.g.nord_italic = true
---end
-
-
 -- Set theme here, use protected call
 local status_ok, _ = pcall(vim.cmd, "colorscheme " .. colorscheme)
 if not status_ok then
