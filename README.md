@@ -1,14 +1,16 @@
 # nvim
-My config for neovim. It tries to:
+## What's this?
+This is my config for neovim. The main goal for it is to be as minimal and maintainable as possible so that I can use neovim for other things than configuring neovim.
 
-## Have the features you'd expect
+## It has some features
 - The IDE-like stuff: autocomplete, rename, hover, go to definition etc. with native LSP
 - Better syntax highlighting with treesitter
 - Other qol stuff like a proper file browser, some git integration, visual navigation between buffers
 - Easy setup for multiple languages
 - Also works as a note taking app / non-coding text editor for markdown files
+- See [plugins.lua](https://github.com/eemilhaa/nvim/blob/main/lua/user/plugins.lua) for a complete list of plugins
 
-## Keep things as simple as possible
+## It also tries to keep things simple
 - Use only the absolutely necessary plugins to achieve the aforementioned
 - Use the defaults for plugins and for neovim when sensible
 - No weird UI / UX shenanigans: nothing pops at your face / hijacks the cursor / gets inserted unless you explicitly choose so
