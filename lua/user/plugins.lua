@@ -49,13 +49,14 @@ return packer.startup(function(use)
 
     -- nvim-tree
     use { 'kyazdani42/nvim-tree.lua', requires =  'kyazdani42/nvim-web-devicons' }
-    
+
     -- Bufferline
     use { 'akinsho/bufferline.nvim', requires = 'kyazdani42/nvim-web-devicons' }
 
-    -- Colorschemes
+    -- The best colorschemes
+    use "rebelot/kanagawa.nvim"
     --use 'folke/tokyonight.nvim'
-    use 'navarasu/onedark.nvim'
+    --use 'navarasu/onedark.nvim'
     --use 'tanvirtin/monokai.nvim'
     --use({"catppuccin/nvim", as = "catppuccin"})
     --use({'rose-pine/neovim', as = 'rose-pine'})

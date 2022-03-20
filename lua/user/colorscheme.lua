@@ -1,5 +1,5 @@
 -- Select theme here
-local colorscheme = "onedark"
+local colorscheme = "kanagawa"
 
 -- Theme-specific customizations here
 --if colorscheme == "catppuccin" then
