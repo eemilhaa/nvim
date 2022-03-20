@@ -2,6 +2,7 @@
 local colorscheme = "kanagawa"
 
 -- Theme-specific customizations here
+
 --if colorscheme == "catppuccin" then
 --    local setup = {
 --        styles = {

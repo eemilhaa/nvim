@@ -1,6 +1,6 @@
 # nvim
 ## What's this?
-This is my config for neovim. The main goal for it is to be as minimal and maintainable as possible so that I can use neovim for other things than configuring neovim.
+It's my neovim setup. The main goal for it is to be as minimal and maintainable as possible so that I can use neovim for other things than configuring neovim.
 
 ## It has some features
 - The IDE-like stuff: autocomplete, rename, hover, go to definition etc. with native LSP
