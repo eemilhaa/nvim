@@ -2,19 +2,13 @@
 local colorscheme = "kanagawa"
 
 -- Theme-specific customizations here
-
---if colorscheme == "catppuccin" then
---    local setup = {
---        styles = {
---            comments = "NONE",
---            functions = "NONE",
---            keywords = "NONE",
---            strings = "NONE",
---            variables = "NONE",
---        }
---    }
---    require(colorscheme).setup(setup)
---end
+if colorscheme == "kanagawa" then
+    local default_colors = require("kanagawa.colors").setup()
+    local overrides = {
+        VertSplit  = { fg = default_colors.bg_dark, bg = "NONE" },
+    }
+    require(colorscheme).setup({ overrides = overrides })
+end
 
 if colorscheme == "onedark" then
     require(colorscheme).setup {
@@ -41,24 +35,6 @@ if colorscheme == "material" then
             strings = false, -- Enable italic strings
             variables = false -- Enable italic variables
         },
---        contrast_filetypes = { -- Specify which filetypes get the contrasted (darker) background
---            "terminal", -- Darker terminal background
---            "packer", -- Darker packer background
---            "qf" -- Darker qf list background
---        },
---        high_visibility = {
---            lighter = false, -- Enable higher contrast text for lighter style
---            darker = false -- Enable higher contrast text for darker style
---        },
---        disable = {
---            borders = false, -- Disable borders between verticaly split windows
---            background = false, -- Prevent the theme from setting the background (NeoVim then uses your teminal background)
---            term_colors = false, -- Prevent the theme from setting terminal colors
---            eob_lines = false -- Hide the end-of-buffer lines
---        },
---        lualine_style = "default", -- Lualine style ( can be 'stealth' or 'default' )
---        async_loading = true, -- Load parts of the theme asyncronously for faster startup (turned on by default)
---        custom_highlights = {} -- Overwrite highlights with your own
     })
 end
 
