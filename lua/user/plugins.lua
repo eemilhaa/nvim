@@ -84,6 +84,9 @@ return packer.startup(function(use)
     --use "tamago324/nlsp-settings.nvim" -- language server settings defined in json for
     --use "jose-elias-alvarez/null-ls.nvim" -- for formatters and linters
 
+    -- Illuminate
+    use "RRethy/vim-illuminate"
+
     -- Autopairs
     use "windwp/nvim-autopairs"
 
