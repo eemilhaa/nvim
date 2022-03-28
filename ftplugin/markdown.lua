@@ -15,9 +15,9 @@ keymap("v", "j", "gj", opts)
 keymap("v", "k", "gk", opts)
 
 -- Wrap and break lines on spaces
-vim.opt.wrap = true
-vim.opt.linebreak = true
+vim.o.wrap = true
+vim.o.linebreak = true
 
 -- Nice for nesting lists
-vim.opt.shiftwidth = 2                          -- the number of spaces inserted for each indentation
-vim.opt.tabstop = 2                             -- insert spaces for a tab
+vim.o.shiftwidth = 2                          -- the number of spaces inserted for each indentation
+vim.o.tabstop = 2                             -- insert spaces for a tab
