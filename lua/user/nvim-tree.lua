@@ -30,12 +30,11 @@ local list = {
     { key = "[c",                           action = "prev_git_item" },
     { key = "]c",                           action = "next_git_item" },
     { key = "-",                            action = "dir_up" },
-    -- use lighspeed in nvimtree too
-    { key = "f",                            action = "system_open" },
+    { key = "f",                            action = "system_open" }, -- for lightspeed
     { key = "q",                            action = "close" },
     { key = "g?",                           action = "toggle_help" },
     { key = "W",                            action = "collapse_all" },
-    { key = "S",                            action = "search_node" },
+    { key = "F",                            action = "search_node" }, -- for lightspeed
     { key = "<C-k>",                        action = "toggle_file_info" },
     { key = ".",                            action = "run_file_command" }
 }
