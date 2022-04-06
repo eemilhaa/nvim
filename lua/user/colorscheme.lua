@@ -1,7 +1,12 @@
 -- Select theme here
-local colorscheme = "kanagawa"
+local colorscheme = "gruvbox"
 
 -- Theme-specific customizations here
+if colorscheme == "gruvbox" then
+    vim.g.gruvbox_sign_column = "bg0"
+end
+
+
 if colorscheme == "kanagawa" then
     local default_colors = require("kanagawa.colors").setup()
     local overrides = {

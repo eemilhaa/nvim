@@ -54,6 +54,7 @@ return packer.startup(function(use)
 
     -- The best colorschemes
     use "rebelot/kanagawa.nvim"
+    use "ellisonleao/gruvbox.nvim"
     --use 'folke/tokyonight.nvim'
     --use 'navarasu/onedark.nvim'
     --use 'tanvirtin/monokai.nvim'
