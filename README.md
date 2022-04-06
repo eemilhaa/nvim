@@ -2,7 +2,9 @@
 ## What's this?
 It's my neovim setup. The main goal for it is to be as minimal and maintainable as possible so that I can use neovim for other things than configuring neovim.
 
-![screenshot](https://user-images.githubusercontent.com/70660230/159476903-c1f9c0e3-6648-4e2f-9278-34d0384d17dc.png)
+
+![screenshot](https://user-images.githubusercontent.com/70660230/162035785-c330ca13-a9f5-446c-b6cf-7689c7c6f38f.png)
+
 
 ## It has some features
 - The IDE-like stuff: autocomplete, rename, hover, go to definition etc. with native LSP
