@@ -35,7 +35,15 @@ keymap("n", "<leader>n", ":NvimTreeFindFile<CR>", opts)
 -- if not using nvim-tree
 --keymap("n", "<leader>e", ":Lex 30<cr>", opts)
 --keymap("n", "<leader>t", ":Tex <cr>", opts)
---
+
+-- Telescope
+keymap(
+    "n",
+    "<leader>ff",
+    "<cmd>lua require('telescope.builtin').find_files()<cr>",
+    opts
+)
+
 -- Resize windows with arrows
 keymap("n", "<C-Up>", ":resize +2<CR>", opts)
 keymap("n", "<C-Down>", ":resize -2<CR>", opts)
