@@ -47,10 +47,10 @@ return packer.startup(function(use)
     use "nvim-lua/plenary.nvim" -- Useful lua functions used ny lots of plugins
 
     -- nvim-tree
-    use { 'kyazdani42/nvim-tree.lua', requires =  'kyazdani42/nvim-web-devicons' }
+    use { 'kyazdani42/nvim-tree.lua', requires = 'kyazdani42/nvim-web-devicons' }
 
     -- Bufferline
-    use { 'akinsho/bufferline.nvim', requires = 'kyazdani42/nvim-web-devicons' }
+    use { 'akinsho/bufferline.nvim', branch="main", requires = 'kyazdani42/nvim-web-devicons' }
 
     -- The best colorschemes
     use "rebelot/kanagawa.nvim"
