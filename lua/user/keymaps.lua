@@ -39,7 +39,7 @@ keymap("n", "<leader>n", ":NvimTreeFindFile<CR>", opts)
 -- Telescope
 keymap(
     "n",
-    "<leader>ff",
+    "<leader>t",
     "<cmd>lua require('telescope.builtin').find_files()<cr>",
     opts
 )
