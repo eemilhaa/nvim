@@ -13,6 +13,8 @@ keymap("n", "A", "g$a", opts)
 -- Same for visual mode
 keymap("v", "j", "gj", opts)
 keymap("v", "k", "gk", opts)
+keymap("v", "0", "g0", opts)
+keymap("v", "$", "g$", opts)
 
 -- Wrap and break lines on spaces
 vim.o.wrap = true
