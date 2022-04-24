@@ -1,14 +1,14 @@
 -- Options for setting keymaps
-local opts = { noremap = true, silent = true }
+local opts = { silent = true }
 -- Shorten function name
-local keymap = vim.api.nvim_set_keymap
+local keymap = vim.keymap.set
 
 -- Navigate wrapped lines like you would normal lines
 keymap("n", "j", "gj", opts)
 keymap("n", "k", "gk", opts)
 keymap("n", "0", "g0", opts)
 keymap("n", "$", "g$", opts)
-keymap("n", "I", "gI", opts)
+keymap("n", "I", "g0i", opts)
 keymap("n", "A", "g$a", opts)
 -- Same for visual mode
 keymap("v", "j", "gj", opts)
