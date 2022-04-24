@@ -25,10 +25,11 @@ end
 -- cmp synergy: https://github.com/neovim/nvim-lspconfig/wiki/Snippets
 -- LSP KEYMAPS
 local opts = { noremap=true, silent=true }
-vim.api.nvim_set_keymap('n', '<leader>l', '<cmd>lua vim.diagnostic.open_float()<CR>', opts)
-vim.api.nvim_set_keymap('n', '[d', '<cmd>lua vim.diagnostic.goto_prev()<CR>', opts)
-vim.api.nvim_set_keymap('n', ']d', '<cmd>lua vim.diagnostic.goto_next()<CR>', opts)
-vim.api.nvim_set_keymap('n', '<leader>q', '<cmd>lua vim.diagnostic.setloclist()<CR>', opts)
+
+vim.keymap.set('n', '<leader>l', '<cmd>lua vim.diagnostic.open_float()<CR>', opts)
+vim.keymap.set('n', '[d', '<cmd>lua vim.diagnostic.goto_prev()<CR>', opts)
+vim.keymap.set('n', ']d', '<cmd>lua vim.diagnostic.goto_next()<CR>', opts)
+vim.keymap.set('n', '<leader>q', '<cmd>lua vim.diagnostic.setloclist()<CR>', opts)
 
 -- Use an on_attach function to only map the following keys
 -- after the language server attaches to the current buffer

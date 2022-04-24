@@ -1,11 +1,14 @@
 -- Options for stting keymaps
-local opts = { noremap = true, silent = true }
+local opts = {
+    -- noremap = true,     -- Default as of 0.7
+    silent = true,
+}
 
 -- Terminal-specific opts
 local term_opts = { silent = true }
 
 -- Shorten function name
-local keymap = vim.api.nvim_set_keymap
+local keymap = vim.keymap.set
 
 --Remap space as leader key
 keymap("", "<Space>", "<Nop>", opts)
