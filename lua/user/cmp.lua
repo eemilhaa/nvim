@@ -9,13 +9,13 @@ require("luasnip/loaders/from_vscode").lazy_load()
 luasnip.filetype_extend("javascript", { "javascriptreact" })
 luasnip.filetype_extend("javascript", { "html" })
 
-cmp.setup {
+cmp.setup({
     snippet = {
         expand = function(args)
             require("luasnip").lsp_expand(args.body)
         end,
     },
-    mapping = {
+    mapping = cmp.mapping.preset.insert({
         ["<C-p>"] = cmp.mapping.select_prev_item(),
         ["<C-n>"] = cmp.mapping.select_next_item(),
         ["<C-d>"] = cmp.mapping.scroll_docs(-4),
@@ -26,12 +26,12 @@ cmp.setup {
             behavior = cmp.ConfirmBehavior.Replace,
             select = false,
         },
-    },
-    sources = {
+    }),
+    sources = cmp.config.sources({
         -- the order matters here, place most important first
         { name = "nvim_lsp" },
         { name = "luasnip" },
         { name = "buffer" },
         { name = "path" },
-    },
-}
+    }),
+})
