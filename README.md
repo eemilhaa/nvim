@@ -1,5 +1,5 @@
 # Another neovim config
-This is my neovim setup. Its main goal is to be as simple and maintainable as possible so that I can use neovim for other things than configuring neovim.
+This one's main goal is to be as simple and maintainable as possible so I can use neovim for other things than configuring neovim.
 
 
 ![screenshot](https://user-images.githubusercontent.com/70660230/162035785-c330ca13-a9f5-446c-b6cf-7689c7c6f38f.png)
