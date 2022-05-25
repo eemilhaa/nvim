@@ -24,7 +24,7 @@ end
 -- https://github.com/neovim/nvim-lspconfig#suggested-configuration
 -- cmp synergy: https://github.com/neovim/nvim-lspconfig/wiki/Snippets
 -- LSP KEYMAPS
-local opts = { noremap=true, silent=true }
+local opts = { noremap = true, silent = true }
 
 vim.keymap.set('n', '<leader>l', '<cmd>lua vim.diagnostic.open_float()<CR>', opts)
 vim.keymap.set('n', '[d', '<cmd>lua vim.diagnostic.goto_prev()<CR>', opts)
@@ -51,7 +51,7 @@ M.on_attach = function(client, bufnr)
     vim.api.nvim_buf_set_keymap(bufnr, 'n', '<leader>rn', '<cmd>lua vim.lsp.buf.rename()<CR>', opts)
     vim.api.nvim_buf_set_keymap(bufnr, 'n', '<leader>ca', '<cmd>lua vim.lsp.buf.code_action()<CR>', opts)
     vim.api.nvim_buf_set_keymap(bufnr, 'n', 'gr', '<cmd>lua vim.lsp.buf.references()<CR>', opts)
-    vim.api.nvim_buf_set_keymap(bufnr, 'n', '<leader>f', '<cmd>lua vim.lsp.buf.formatting()<CR>', opts)
+    vim.api.nvim_buf_set_keymap(bufnr, 'n', '<leader>fo', 'vim.lsp.buf.format()<CR>', opts)
     -- Get that good lsp illumination
     require("illuminate").on_attach(client)
 end
