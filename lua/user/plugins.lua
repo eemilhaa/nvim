@@ -53,8 +53,8 @@ return packer.startup(function(use)
     use { 'akinsho/bufferline.nvim', branch="main", requires = 'kyazdani42/nvim-web-devicons' }
 
     -- The best colorschemes
-    use "rebelot/kanagawa.nvim"
-    use "ellisonleao/gruvbox.nvim"
+    --use "rebelot/kanagawa.nvim"
+    --use "ellisonleao/gruvbox.nvim"
     --use 'folke/tokyonight.nvim'
     --use 'navarasu/onedark.nvim'
     --use 'tanvirtin/monokai.nvim'
@@ -63,6 +63,8 @@ return packer.startup(function(use)
     --use 'marko-cerovac/material.nvim'
     --use 'shaunsingh/nord.nvim'
     --use 'EdenEast/nightfox.nvim'
+    --use "sainnhe/everforest"
+    use 'rmehri01/onenord.nvim'
 
     -- Treesitter
     use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' }
