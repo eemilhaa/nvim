@@ -56,7 +56,7 @@ return packer.startup(function(use)
     --use "rebelot/kanagawa.nvim"
     --use "ellisonleao/gruvbox.nvim"
     --use 'folke/tokyonight.nvim'
-    --use 'navarasu/onedark.nvim'
+    use 'navarasu/onedark.nvim'
     --use 'tanvirtin/monokai.nvim'
     --use({"catppuccin/nvim", as = "catppuccin"})
     --use({'rose-pine/neovim', as = 'rose-pine'})
@@ -64,7 +64,7 @@ return packer.startup(function(use)
     --use 'shaunsingh/nord.nvim'
     --use 'EdenEast/nightfox.nvim'
     --use "sainnhe/everforest"
-    use 'rmehri01/onenord.nvim'
+    --use 'rmehri01/onenord.nvim'
 
     -- Treesitter
     use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' }

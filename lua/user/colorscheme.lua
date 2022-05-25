@@ -1,5 +1,5 @@
 -- Select theme here
-local colorscheme = "onenord"
+local colorscheme = "onedark"
 
 -- Theme-specific customizations here
 if colorscheme == "gruvbox" then
