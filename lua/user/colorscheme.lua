@@ -1,7 +1,12 @@
 -- Select theme here
-local colorscheme = "dracula"
+local colorscheme = "catppuccin"
 
 -- Theme-specific customizations here
+if colorscheme == "catppuccin" then
+    vim.g.catppuccin_flavour = "macchiato"
+end
+
+
 if colorscheme == "gruvbox" then
     vim.g.gruvbox_sign_column = "bg0"
 end
