@@ -3,7 +3,7 @@ local colorscheme = "catppuccin"
 
 -- Theme-specific customizations here
 if colorscheme == "catppuccin" then
-    vim.g.catppuccin_flavour = "macchiato"
+    vim.g.catppuccin_flavour = "frappe"
 end
 
 
