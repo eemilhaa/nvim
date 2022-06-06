@@ -1,5 +1,5 @@
 -- Select theme here
-local colorscheme = "catppuccin"
+local colorscheme = "dracula"
 
 -- Theme-specific customizations here
 if colorscheme == "catppuccin" then
@@ -22,7 +22,7 @@ end
 
 if colorscheme == "onedark" then
     require(colorscheme).setup {
-        style = "warm",
+        style = "darker",
     }
 end
 
@@ -31,7 +31,7 @@ if colorscheme == "material" then
     require(colorscheme).setup({
         contrast = {
             sidebars = false, -- Enable contrast for sidebar-like windows ( for example Nvim-Tree )
-            floating_windows = true, -- Enable contrast for floating windows
+            floating_windows = false, -- Enable contrast for floating windows
             line_numbers = false, -- Enable contrast background for line numbers
             sign_column = false, -- Enable contrast background for the sign column
             cursor_line = false, -- Enable darker background for the cursor line
@@ -40,7 +40,7 @@ if colorscheme == "material" then
         },
         italics = {
             comments = true, -- Enable italic comments
-            keywords = false, -- Enable italic keywords
+            keywords = true, -- Enable italic keywords
             functions = true, -- Enable italic functions
             strings = false, -- Enable italic strings
             variables = false -- Enable italic variables
