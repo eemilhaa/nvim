@@ -9,6 +9,7 @@ if colorscheme == "github" then
         theme_style = "dimmed",
         function_style = "italic",
         hide_inactive_statusline = false,
+        dark_sidebar = false,
         -- transparent = true,
 })
 end
