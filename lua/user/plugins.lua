@@ -53,7 +53,8 @@ return packer.startup(function(use)
     use { 'akinsho/bufferline.nvim', branch="main", requires = 'kyazdani42/nvim-web-devicons' }
 
     -- The best colorschemes
-    use 'Mofiqul/dracula.nvim'
+    use "projekt0n/github-nvim-theme"
+    --use 'Mofiqul/dracula.nvim'
     --use "rebelot/kanagawa.nvim"
     --use "ellisonleao/gruvbox.nvim"
     --use 'folke/tokyonight.nvim'
