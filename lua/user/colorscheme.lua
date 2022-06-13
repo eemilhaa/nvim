@@ -1,5 +1,5 @@
 -- Select theme here
-local colorscheme = "github"
+local colorscheme = "catppuccin"
 
 -- Theme-specific customizations here
 
@@ -62,8 +62,8 @@ end
 
 -- TODO
 -- Set theme here, use protected call
---local status_ok, _ = pcall(vim.cmd, "colorscheme " .. colorscheme)
---if not status_ok then
---    vim.notify("colorscheme " .. colorscheme .. " not found!")
---    return
---end
+local status_ok, _ = pcall(vim.cmd, "colorscheme " .. colorscheme)
+if not status_ok then
+    vim.notify("colorscheme " .. colorscheme .. " not found!")
+    return
+end

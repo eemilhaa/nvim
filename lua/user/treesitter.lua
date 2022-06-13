@@ -6,5 +6,8 @@ require("nvim-treesitter.configs").setup {
         disable = { "json" }, -- list of language that will be disabled
         additional_vim_regex_highlighting = true,
     },
-    indent = { enable = true, disable = { "javascript" } },
+    indent = {
+        enable = true,
+        -- disable = { "javascript" }
+    },
 }

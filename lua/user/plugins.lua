@@ -57,10 +57,10 @@ return packer.startup(function(use)
     --use 'Mofiqul/dracula.nvim'
     --use "rebelot/kanagawa.nvim"
     --use "ellisonleao/gruvbox.nvim"
-    --use 'folke/tokyonight.nvim'
+    use 'folke/tokyonight.nvim'
     --use 'navarasu/onedark.nvim'
     --use 'tanvirtin/monokai.nvim'
-    --use({"catppuccin/nvim", as = "catppuccin"})
+    use({"catppuccin/nvim", as = "catppuccin"})
     --use({'rose-pine/neovim', as = 'rose-pine'})
     --use 'marko-cerovac/material.nvim'
     --use 'shaunsingh/nord.nvim'
