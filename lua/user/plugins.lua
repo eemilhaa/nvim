@@ -58,6 +58,7 @@ return packer.startup(function(use)
     --use "rebelot/kanagawa.nvim"
     --use "ellisonleao/gruvbox.nvim"
     use 'folke/tokyonight.nvim'
+    use "LunarVim/darkplus.nvim"
     --use 'navarasu/onedark.nvim'
     --use 'tanvirtin/monokai.nvim'
     use({"catppuccin/nvim", as = "catppuccin"})

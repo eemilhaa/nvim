@@ -1,5 +1,5 @@
 -- Select theme here
-local colorscheme = "catppuccin"
+local colorscheme = "darkplus"
 
 -- Theme-specific customizations here
 
