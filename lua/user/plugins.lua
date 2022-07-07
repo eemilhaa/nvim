@@ -49,9 +49,6 @@ return packer.startup(function(use)
     -- nvim-tree
     use { 'kyazdani42/nvim-tree.lua', requires = 'kyazdani42/nvim-web-devicons' }
 
-    -- Bufferline
-    use { 'akinsho/bufferline.nvim', branch="main", requires = 'kyazdani42/nvim-web-devicons' }
-
     -- The best colorschemes
     use "projekt0n/github-nvim-theme"
     --use 'Mofiqul/dracula.nvim'

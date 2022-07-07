@@ -46,6 +46,12 @@ keymap(
     "<cmd>lua require('telescope.builtin').find_files()<cr>",
     opts
 )
+keymap(
+    "n",
+    "<leader>b",
+    "<cmd>lua require('telescope.builtin').buffers()<cr>",
+    opts
+)
 
 -- Resize windows with arrows
 keymap("n", "<C-Up>", ":resize +2<CR>", opts)

@@ -54,7 +54,7 @@ M.on_attach = function(client, bufnr)
     vim.keymap.set('n', '<leader>rn', vim.lsp.buf.rename, bufopts)
     vim.keymap.set('n', '<leader>ca', vim.lsp.buf.code_action, bufopts)
     vim.keymap.set('n', 'gr', vim.lsp.buf.references, bufopts)
-    vim.keymap.set('n', '<leader>bf', vim.lsp.buf.format, bufopts) -- TODO
+    vim.keymap.set('n', '<leader>lbf', vim.lsp.buf.format, bufopts) -- TODO
 
     -- LSP illumination
     require('illuminate').on_attach(client)
