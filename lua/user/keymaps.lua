@@ -1,11 +1,10 @@
+local keymap = require("user.functions").keymap
+
 -- Options for stting keymaps
 local opts = {
     -- noremap = true,     -- Default as of 0.7
     silent = true,
 }
-
--- Shorten function name
-local keymap = vim.keymap.set
 
 --Remap space as leader key
 keymap("", "<Space>", "<Nop>", opts)
