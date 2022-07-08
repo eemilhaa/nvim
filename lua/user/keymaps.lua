@@ -2,7 +2,6 @@ local keymap = require("user.functions").keymap
 
 -- Options for stting keymaps
 local opts = {
-    -- noremap = true,     -- Default as of 0.7
     silent = true,
 }
 
