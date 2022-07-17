@@ -1,6 +1,6 @@
-local keymap = require("user.functions").keymap
+local keymap = require('user.functions').keymap
+local opts = require('user.functions').keymap_opts
 
--- m.anything gets exported at the end
 local M = {}
 
 M.setup = function()
@@ -11,11 +11,11 @@ M.setup = function()
         severity_sort = true,
         float = {
             focusable = false,
-            style = "minimal",
-            --border = "rounded",
-            source = "always",
-            header = "",
-            prefix = "",
+            style = 'minimal',
+            --border = 'rounded',
+            source = 'always',
+            header = '',
+            prefix = '',
         },
     }
 
@@ -26,7 +26,6 @@ end
 -- cmp synergy: https://github.com/neovim/nvim-lspconfig/wiki/Snippets
 -- LSP KEYMAPS
 -- See `:help vim.diagnostic.*` for documentation on any of the below functions
-local opts = { noremap = true, silent = true }
 keymap('n', '<leader>l', vim.diagnostic.open_float, opts)
 keymap('n', '[d', vim.diagnostic.goto_prev, opts)
 keymap('n', ']d', vim.diagnostic.goto_next, opts)

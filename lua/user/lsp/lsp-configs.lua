@@ -1,13 +1,13 @@
-local lsp_installer = require("nvim-lsp-installer")
-local lspconfig = require("lspconfig")
-local handlers = require("user.lsp.handlers")
+local lsp_installer = require('nvim-lsp-installer')
+local lspconfig = require('lspconfig')
+local handlers = require('user.lsp.handlers')
 
 local servers = {
-    "pylsp",
-    "sumneko_lua",
-    "html",
-    "tsserver",
-    "rust_analyzer"
+    'pylsp',
+    'sumneko_lua',
+    'html',
+    'tsserver',
+    'rust_analyzer'
 }
 
 lsp_installer.setup {
