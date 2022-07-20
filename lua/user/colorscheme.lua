@@ -1,5 +1,5 @@
 -- Select theme here
-local colorscheme = 'catppuccin'
+local colorscheme = 'darkplus'
 
 if colorscheme == 'catppuccin' then
     vim.g.catppuccin_flavour = 'frappe'

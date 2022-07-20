@@ -1,6 +1,7 @@
 local keymap = require('user.functions').keymap
 local opts = require('user.functions').keymap_opts
 
+
 local M = {}
 
 M.setup = function()
@@ -31,14 +32,10 @@ keymap('n', '[d', vim.diagnostic.goto_prev, opts)
 keymap('n', ']d', vim.diagnostic.goto_next, opts)
 keymap('n', '<leader>q', vim.diagnostic.setloclist, opts)
 
--- Use an on_attach function to only map the following keys
--- after the language server attaches to the current buffer
+-- All this happens when the language server attaches to the current buffer
 M.on_attach = function(client, bufnr)
-    -- Enable completion triggered by <c-x><c-o>
     vim.api.nvim_buf_set_option(bufnr, 'omnifunc', 'v:lua.vim.lsp.omnifunc')
 
-    -- Mappings.
-    -- See `:help vim.lsp.*` for documentation on any of the below functions
     local bufopts = { noremap = true, silent = true, buffer = bufnr }
     keymap('n', 'gD', vim.lsp.buf.declaration, bufopts)
     keymap('n', 'gd', vim.lsp.buf.definition, bufopts)

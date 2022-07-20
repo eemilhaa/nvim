@@ -44,7 +44,8 @@ return packer.startup(function(use)
     -- Essential
     use 'wbthomason/packer.nvim' -- Have packer manage itself
     use 'nvim-lua/popup.nvim' -- An implementation of the Popup API from vim in Neovim
-    use 'nvim-lua/plenary.nvim' -- Useful lua functions used ny lots of plugins
+    use 'nvim-lua/plenary.nvim' -- Useful lua functions used by lots of plugins
+    use "kyazdani42/nvim-web-devicons" -- icons
 
     -- The best colorschemes
     use 'folke/tokyonight.nvim'
@@ -73,23 +74,14 @@ return packer.startup(function(use)
     --use 'jose-elias-alvarez/null-ls.nvim' -- for formatters and linters
 
     -- The rest
-    use { 'kyazdani42/nvim-tree.lua', requires = 'kyazdani42/nvim-web-devicons' }
+    use 'kyazdani42/nvim-tree.lua'
     use 'RRethy/vim-illuminate'
     use 'windwp/nvim-autopairs'
     use 'lukas-reineke/indent-blankline.nvim'
-    use { 'lewis6991/gitsigns.nvim', requires = 'nvim-lua/plenary.nvim' }
-    use {
-        'nvim-lualine/lualine.nvim',
-        requires = {
-            'kyazdani42/nvim-web-devicons',
-            opt = true
-        }
-    }
+    use 'lewis6991/gitsigns.nvim'
+    use 'nvim-lualine/lualine.nvim'
     use 'ggandor/leap.nvim'
-    use {
-      'nvim-telescope/telescope.nvim',
-      requires = { {'nvim-lua/plenary.nvim'} }
-    }
+    use 'nvim-telescope/telescope.nvim'
 
     -- Automatically set up your configuration after cloning packer.nvim
     -- Put this at the end after all plugins
