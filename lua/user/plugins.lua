@@ -45,12 +45,13 @@ return packer.startup(function(use)
     use 'wbthomason/packer.nvim' -- Have packer manage itself
     use 'nvim-lua/popup.nvim' -- An implementation of the Popup API from vim in Neovim
     use 'nvim-lua/plenary.nvim' -- Useful lua functions used by lots of plugins
-    use "kyazdani42/nvim-web-devicons" -- icons
+    use 'kyazdani42/nvim-web-devicons' -- icons
 
     -- The best colorschemes
     use 'folke/tokyonight.nvim'
     use 'LunarVim/darkplus.nvim'
     use({'catppuccin/nvim', as = 'catppuccin'})
+    use 'rebelot/kanagawa.nvim'
 
     -- Treesitter
     use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' }
