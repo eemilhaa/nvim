@@ -5,8 +5,8 @@ local handlers = require('user.lsp.handlers')
 local servers = {
     'pylsp',
     'sumneko_lua',
-    'html',
-    'tsserver',
+--    'html',
+--    'tsserver',
     'rust_analyzer'
 }
 
