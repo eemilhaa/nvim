@@ -19,9 +19,6 @@ local config = {
 
 vim.diagnostic.config(config)
 
--- https://github.com/neovim/nvim-lspconfig#suggested-configuration
--- cmp synergy: https://github.com/neovim/nvim-lspconfig/wiki/Snippets
--- LSP KEYMAPS
 -- See `:help vim.diagnostic.*` for documentation on any of the below functions
 keymap('n', '<leader>l', vim.diagnostic.open_float, opts)
 keymap('n', '[d', vim.diagnostic.goto_prev, opts)

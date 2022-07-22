@@ -21,4 +21,15 @@ keymap(
     '<cmd>lua require("telescope.builtin").buffers()<cr>',
     opts
 )
-
+keymap(
+    'n',
+    '<leader>g',
+    '<cmd>lua require("telescope.builtin").git_commits()<cr>',
+    opts
+)
+keymap(
+    'n',
+    '<leader>s',
+    '<cmd>Telescope treesitter<cr>',
+    opts
+)
