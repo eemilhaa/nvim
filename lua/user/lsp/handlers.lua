@@ -4,34 +4,6 @@ local opts = require('user.functions').keymap_opts
 
 local M = {}
 
-M.setup = function()
-    local config = {
-        virtual_text = false,
-        update_in_insert = true,
-        underline = true,
-        severity_sort = true,
-        float = {
-            focusable = false,
-            style = 'minimal',
-            --border = 'rounded',
-            source = 'always',
-            header = '',
-            prefix = '',
-        },
-    }
-
-    vim.diagnostic.config(config)
-end
-
--- https://github.com/neovim/nvim-lspconfig#suggested-configuration
--- cmp synergy: https://github.com/neovim/nvim-lspconfig/wiki/Snippets
--- LSP KEYMAPS
--- See `:help vim.diagnostic.*` for documentation on any of the below functions
-keymap('n', '<leader>l', vim.diagnostic.open_float, opts)
-keymap('n', '[d', vim.diagnostic.goto_prev, opts)
-keymap('n', ']d', vim.diagnostic.goto_next, opts)
-keymap('n', '<leader>q', vim.diagnostic.setloclist, opts)
-
 -- All this happens when the language server attaches to the current buffer
 M.on_attach = function(client, bufnr)
     vim.api.nvim_buf_set_option(bufnr, 'omnifunc', 'v:lua.vim.lsp.omnifunc')

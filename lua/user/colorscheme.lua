@@ -1,8 +1,8 @@
 -- Select theme here
-local colorscheme = 'kanagawa'
+local colorscheme = 'catppuccin'
 
 if colorscheme == 'catppuccin' then
-    vim.g.catppuccin_flavour = 'frappe'
+    vim.g.catppuccin_flavour = 'Mocha'
 end
 
 if colorscheme == "kanagawa" then
