@@ -11,25 +11,25 @@ require('telescope').setup{
 
 keymap(
     'n',
-    '<leader>ff',
+    '<leader>f',
     '<cmd>lua require("telescope.builtin").find_files()<cr>',
     opts
 )
 keymap(
     'n',
-    '<leader>fb',
+    '<leader>b',
     '<cmd>lua require("telescope.builtin").buffers()<cr>',
     opts
 )
 keymap(
     'n',
-    '<leader>fg',
+    '<leader>g',
     '<cmd>lua require("telescope.builtin").git_commits()<cr>',
     opts
 )
 keymap(
     'n',
-    '<leader>fs',
+    '<leader>s',
     '<cmd>Telescope treesitter<cr>',
     opts
 )
