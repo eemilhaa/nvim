@@ -1,6 +1,7 @@
 local keymap = require('user.functions').keymap
 local opts = require('user.functions').keymap_opts
 
+
 require('telescope').setup{
     pickers = {
         find_files = {

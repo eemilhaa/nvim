@@ -1,5 +1,4 @@
 local keymap = require('user.functions').keymap
-local opts = require('user.functions').keymap_opts
 
 
 local M = {}
